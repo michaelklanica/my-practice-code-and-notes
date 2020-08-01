@@ -258,30 +258,114 @@
 
     //------------------------------------------------------------------------------------------------------------------
     // CONDITIONALS
-    // 'if' statements
+    // 'if' statements --- allows you to execute code based on certain conditions.  The condition results in a boolean
+    // value
+    var condition = true;
+
+    if (condition) {
+        console.log("this condition was true"); // execute this code if the condition is true, otherwise continue.
+    }
+    console.log("this represents the rest of the code.");
 
 
-    // 'if / else' statements
+
+    // 'if / else' statements --- else statement will execute if the condition is false.
+    condition = false;
+
+    if (condition) {
+        console.log("this condition was true"); // execute this code if the condition is true.
+    } else {
+        console.log("this condition was false"); //execute this code if the condition is false.
+    }
+    console.log("this represents the rest of the code.");
 
 
-    // 'if / else if / else' statements
+
+    // 'if / else if / else' statements --- 'else if' is used to chain several conditions together.  But if more
+    // than one of the conditions ARE true, only the code for the first condition encountered will execute.
+    var conditionA = true;
+    var conditionB = true;
+    var conditionC = false;
+
+    if (conditionA) {
+        console.log("conditionA is true");// execute code associated with conditionA.
+    } else if (conditionB) {
+        console.log("conditionB is true");// execute code associated with conditionB.
+    } else if (conditionC) {
+        console.log("conditionC is true");// execute code associated with conditionB.
+    } else {
+        console.log("none of the conditions are true");// execute this code if no conditions are met.
+    }
+    console.log("this represents the rest of the code.");
 
 
     // Ternary Operator (Shorthand 'if / else')
+    condition = true;
+    var result = (condition) ? "condition is true" : "condition is false";
+    console.log(result);
 
+    // 'switch' statements --- these statements can achieve any result that the 'if / else if / else' statements
+    // can.  However, if you have a long list of conditions, the 'switch' statement can make your code more readable.
+    var expression = "item3";
 
-    // 'switch' statements
+    switch (expression) {
+        case "item1":
+            console.log("item1 is true");
+            break;
+        case "item2":
+            console.log("item2 is true");
+            break;
+        case "item3":
+            console.log("item3 is true");
+            break;
+        default:
+            console.log("none of the cases are true");
+            break;
+    }
+    console.log("This represents the rest of the code following the switch statement");
 
 
     //------------------------------------------------------------------------------------------------------------------
-    // LOOPS
+    // LOOPS --- allow you to repeatedly run the same code
+    // 'while' and 'do / while' are good to use if you want to repeat something while some condition is true; 'for'
+    // loops are good to use if you want to do something a specific number of times.  Having said that, both can be
+    // using to achieve the same results.
+
     // 'while' loops
+    var i = 0;                                       // set iteration variable
+
+    console.log("this represents code prior to while loop");
+    while (i < 10) {                                  // set the condition to keep looping. **if this condition is
+                                                      // ALWAYS true, an infinite loop will be created
+        console.log("while loop iteration #" + i);    // this is code to repeat (i times)
+        i++;                                          // increment the iteration variable **NOT DOING THIS MAY
+                                                      // RESULT IN AN INFINITE LOOP.
+    }
+    console.log("this represents code after to while loop");
 
 
-    // 'do / while' loops
+    // 'do / while' loops --- the only difference between this an a 'while' loop, is that in a 'do / while' loop,
+    // the condition is evaluated at the end of the loop.  So, any code will execute at least once.  This might be
+    // useful if you need to make sure a user is prompted for info at least once.
+    console.log("this represents code prior to while loop");
+    i = 11;                                                    // set iteration variable
+
+    do {
+        console.log("this code will execute at least once");   // this is the code to repeat, but once at minimum.
+        i++;                                                   // increment the iteration variable **NOT DOING THIS MAY
+                                                               // RESULT IN AN INFINITE LOOP.
+    } while (i < 10);                                          // set the condition to keep looping. **if this
+                                                               // condition is ALWAYS true, an infinite loop will
+                                                               // be created
+    console.log("this represents code after to while loop");
 
 
     // 'for' loops
+    console.log("this represents code prior to 'for' loop");
+    for (var n = 0; n < 10; n++) {
+        console.log("'for' loop iteration #" + n);
+    }
+    console.log("this represents code after to 'for' loop");
 
 
     // 'break' and 'continue'
