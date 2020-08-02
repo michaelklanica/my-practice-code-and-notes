@@ -369,25 +369,69 @@
 
 
     // 'break' and 'continue'
+    // 'break' will allow you to exit a loop at anytime, regardless if all iterations have completed.
+    var numberToStopAt = 5;
+
+    for (i = 1; 1 < 100; i++) {
+        console.log("Loop counter is: " + i);
+        if (i === numberToStopAt) {
+            console.log("we have reached the stopping point: break!");
+            break;
+            console.log("You will never see this line of code");
+        }
+        console.log("this represents other code in the loop");
+    }
+    console.log("this represents code after the loop")
+
+    // 'continue' will allow you to continue iterating through a loop without completing an entire loop code block.
+    for (var i = 1; i < 100; i++) {
+        if (i % 2 !== 0) {
+            console.log("i = " + i + " CONTINUE!")// execute some code if the condition is met and then continue
+            // iterating
+            continue;
+        }
+        console.log("Here is a lovely even number: " + i);
+    }
 
 
     //------------------------------------------------------------------------------------------------------------------
-    // ARRAYS
+    // ARRAYS --- a data structure that holds an ordered list of items; each item can be of a different data type.
     // Declaring an array
-
+    var someArray = [1, 2, 3, 4, 5];
+    var someOtherArray = ["one", "two", "three", "four", "five"];
+    var yetAnotherArray = [1, "two", [3, 4, "five"]];
 
     // Counting array items
-
+    //using the 'length' property will allow you to see the number of items in an array.
+    console.log(someArray.length);
+    console.log(someOtherArray.length);
+    console.log(yetAnotherArray.length); // the the last item in this array is another array, counted as one item.
 
     // Accessing array elements
-
+    // access array items using an index; much the same way you access a particular character of a string.
+    var someNumbers = [1, 2, 3, 4];
+    console.log(someNumbers[0]);
+    console.log(someNumbers[1]);
+    console.log(someNumbers[2]);
+    console.log(someNumbers[3]);
 
     // Iterating arrays
     // Using 'for' loop
+    var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+
+    // loop through the array and log the values
+    for (var i = 0; i < shapes.length; i++) {
+        console.log('The shape at index ' + i + ' is: ' + shapes[i]);
+    }
 
 
     // Using 'forEach' loop
+    var shapes = ['square', 'rectangle', 'circle', 'triangle'];
 
+    // loop through the array and log the values
+    shapes.forEach(function(shape) {
+        console.log('Here is a lovely shape: ' + shape + '.');
+    });
 
     // MANIPULATING ARRAYS
     // Adding elements
