@@ -372,7 +372,8 @@
     // 'break' will allow you to exit a loop at anytime, regardless if all iterations have completed.
     var numberToStopAt = 5;
 
-    for (i = 1; 1 < 100; i++) {
+    for (i = 1; i < 100; i++) {
+        
         console.log("Loop counter is: " + i);
         if (i === numberToStopAt) {
             console.log("we have reached the stopping point: break!");
@@ -434,14 +435,30 @@
     });
 
     // MANIPULATING ARRAYS
-    // Adding elements
-
+    var daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+    // Adding elements. Arguments can be passed as follows:
+    // Use 'unshift' to add elements to the beginning of an array.
+    console.log(daysOfTheWeek);
+    daysOfTheWeek.unshift("Sunday");
+    console.log(daysOfTheWeek);
+    // Use 'push' to add elements to the end of an array.
+    daysOfTheWeek.push("Friday", "Saturday");
+    console.log(daysOfTheWeek);
 
     // Removing elements
-
+    // Use 'shift' to remove the first element of an array. NO ARGS!
+    daysOfTheWeek.shift();
+    console.log(daysOfTheWeek);
+    // Use 'push' to remove the last element from of an array. NO ARGS!
+    daysOfTheWeek.pop();
+    console.log(daysOfTheWeek);
 
     // Locating array elements
-
+    // 'indexOf'
+    var index = daysOfTheWeek.indexOf('Tuesday');
+    console.log(index);
+    //
+    var index = daysOfTheWeek.lastIndexOf('Thursday');
 
     // Slicing
 
