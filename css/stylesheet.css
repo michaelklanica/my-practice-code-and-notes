@@ -1,17 +1,3 @@
-#main-header {
-    font-family: Futura, Arial, SansSerif;
-    text-align: center;
-    color: greenyellow;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    background-color: #21082d;
-    height: 175px;
-    width: 200px;
-    padding: 20px;
-    border: navy solid 2px;
-    border-radius: 25px;
-    margin: 0px;
-
-}
 h1, p {
     margin: 0px;
     padding: 0px;
@@ -25,7 +11,36 @@ p {
     padding-top: 6px;
 }
 
+#main-header {
+    font-family: Futura, Arial, SansSerif;
+    text-align: center;
+    color: #d9ff9d;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    background-color: #21082d;
+    height: 175px;
+    width: 200px;
+    padding: 20px;
+    border: navy solid 2px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#main-header2 {
+    font-family: Futura, Arial, SansSerif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px darkviolet, 0 0 1em lightblue, 0 0 0.2em mediumvioletred;
+    background-color: #000000;
+    height: 175px;
+    width: 200px;
+    padding: 20px;
+    border: navy solid 2px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
 body {
     background-color: #0e0113;
 
 }
+
