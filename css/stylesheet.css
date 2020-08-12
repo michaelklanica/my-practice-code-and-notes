@@ -1,46 +1,86 @@
-h1, p {
-    margin: 0px;
-    padding: 0px;
-}
-h1 {
-    font-size: 2.5em;
+/*h1, p {*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+/*h1 {*/
+/*    font-size: 2.5em;*/
+/*}*/
+
+/*p {*/
+/*    font-size: 1.35em;*/
+/*    padding-top: 6px;*/
+/*}*/
+
+/*#main-header {*/
+/*    font-family: Futura, Arial, SansSerif;*/
+/*    text-align: center;*/
+/*    color: #d9ff9d;*/
+/*    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;*/
+/*    background-color: #21082d;*/
+/*    height: 175px;*/
+/*    width: 200px;*/
+/*    padding: 20px;*/
+/*    border: navy solid 2px;*/
+/*    border-radius: 25px;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*#main-header2 {*/
+/*    font-family: Futura, Arial, SansSerif;*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*    text-shadow: 1px 1px 2px darkviolet, 0 0 1em lightblue, 0 0 0.2em mediumvioletred;*/
+/*    background-color: #000000;*/
+/*    height: 175px;*/
+/*    width: 200px;*/
+/*    padding: 20px;*/
+/*    border: navy solid 2px;*/
+/*    border-radius: 25px;*/
+/*    margin: 10px;*/
+/*}*/
+* {
+    margin: 0;
+    padding: 0;
+
 }
 
-p {
-    font-size: 1.35em;
-    padding-top: 6px;
-}
-
-#main-header {
-    font-family: Futura, Arial, SansSerif;
-    text-align: center;
-    color: #d9ff9d;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    background-color: #21082d;
-    height: 175px;
-    width: 200px;
-    padding: 20px;
-    border: navy solid 2px;
-    border-radius: 25px;
-    margin: 10px;
-}
-
-#main-header2 {
-    font-family: Futura, Arial, SansSerif;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 2px darkviolet, 0 0 1em lightblue, 0 0 0.2em mediumvioletred;
-    background-color: #000000;
-    height: 175px;
-    width: 200px;
-    padding: 20px;
-    border: navy solid 2px;
-    border-radius: 25px;
-    margin: 10px;
-}
 
 body {
     background-color: #0e0113;
+    margin: 0;
+}
+
+header {
+    background-color: lightyellow;
+    width: 100%;
+    height: 200px;
+    margin: 0px;
+}
+
+nav {
+    background-color: lightgreen;
+    width: 100%;
+    height: 50px;
 
 }
 
+main {
+    background-color: lightblue;
+    width: 100%;
+    height: 20px;
+
+}
+
+aside {
+    background-color: mediumpurple;
+    width: 100%;
+    height: 20px;
+
+}
+
+footer {
+    background-color: pink;
+    width: 100%;
+    height: 20px;
+
+}
