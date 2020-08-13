@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background-color: lightskyblue;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.uncle {
+    background-color: violet;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+#red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+
+}
+
+#green {
+    background-color: green;
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    float: left;
+}
+
+#blue {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+}
+
+#yellow {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+}
+
+#cyan {
+    background-color: cyan;
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    float: left;
+}
+
+#magenta {
+    background-color: magenta;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+}
