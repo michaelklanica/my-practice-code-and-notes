@@ -4,6 +4,7 @@
 }
 
 .container {
+    font-family: Arial, Veranda, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -47,7 +48,6 @@ nav {
 }
 
 .main-nav>li {
-    font-family: Arial, Veranda, sans-serif;
     font-size: .8em;
     color: white;
     padding: 8px 15px;
@@ -55,9 +55,17 @@ nav {
 }
 
 aside {
-    background-color: #840000;
+    background-color: #d0d0d0;
     width: 210px;
     height: 500px;
+    margin: 2px;
+}
+
+.site-search {
+    padding: 8px;
+    font-size: .9em;
+    border: 1px black solid;
+    margin: 1px;
 }
 
 main {
@@ -67,7 +75,6 @@ main {
 }
 
 section {
-    font-family: Arial, Verdana, sans-serif;
     background-color: #d0d0d0;
     width: 210px;
     height: 220px;
@@ -79,6 +86,7 @@ section {
 
 .form-option {
     padding: 8px 0;
+    font-size: .9em;
 }
 
 h2 {
@@ -86,9 +94,12 @@ h2 {
     color: #022601;
 }
 
+
 #create-account {
     list-style-type: none;
-    font-size: .8em;
+    font-size: .6em;
+    color: #022601;
+
 }
 
 footer {
