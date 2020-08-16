@@ -47,13 +47,12 @@ nav {
 }
 
 .main-nav>li {
-    font-family: Arial, "Times New Roman", sans-serif;
+    font-family: Arial, Veranda, sans-serif;
     font-size: .8em;
     color: white;
-    padding: 7px 15px;
-    border: 1px solid white;
-}
+    padding: 8px 15px;
 
+}
 
 aside {
     background-color: #840000;
@@ -68,9 +67,28 @@ main {
 }
 
 section {
-    background-color: #1969B2;
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #d0d0d0;
     width: 210px;
-    height: 200px;
+    height: 220px;
+    padding: 8px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-option {
+    padding: 8px 0;
+}
+
+h2 {
+    font-size: 1.25em;
+    color: #022601;
+}
+
+#create-account {
+    list-style-type: none;
+    font-size: .8em;
 }
 
 footer {
