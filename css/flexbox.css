@@ -84,6 +84,11 @@ section {
     flex-direction: column;
 }
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-option {
     padding: 8px 0;
     font-size: .9em;
@@ -97,7 +102,7 @@ h2 {
 
 #create-account {
     list-style-type: none;
-    font-size: .6em;
+    font-size: .7em;
     color: #022601;
 
 }

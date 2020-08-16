@@ -12,7 +12,7 @@
                 <img src="img/badge.png" alt="Listology Logo">
                 <img src="img/tagline.png" alt="Tagline" class="tagline">
             </div>
-            <nav>
+            <nav>                                               <!-- CODE FOR MAIN NAV BAR -->
                 <ul class="main-nav">
                     <li>BROWSE</li>
                     <li>RANDOM</li>
@@ -22,20 +22,23 @@
             </nav>
         </header>
         <div class="main-content">
-            <aside>
-    <!--            Site search, 'popular content, recent updates-->
-                <div class="site-search">
+            <aside>                                             <!-- CODE FOR THE LEFT-HAND COLUMN OF MAIN DISPLAY -->
+                <div class="site-search">                       <!-- Site search box -->
                     <label for="site-search">Search this site:</label>
                     <input id="site-search" type="text">
                     <input type="submit" value="Search">
                 </div>
+                <div class="popular-content">                   <!-- Popular content box -->
+                    <p>This is where "today's popular content" will be displayed.</p>
+                </div>
+                <div class="recent-updates">                    <!-- Recent updates box -->
+                    <p>This is the most recent updates will be displayed</p>
+                </div>
             </aside>
-            <main>
-    <!--            content changes based on menu selection-->
-
+            <main>                                              <!-- CODE FOR THE CENTER SECTION OF THE MAIN DISPLAY -->
+                <p>This is where the main content will be displayed.</p>
             </main>
-            <section>
-    <!--            User login, account creation, password recovery-->
+            <section>                                           <!-- CODE FOR THE RIGHT-HAND COLUMN OF MAIN DISPLAY -->
                 <h2>User Login</h2>
                 <form class="login-form" action="POST">
                     <div class="form-option">
@@ -53,7 +56,6 @@
                         <li>CREATE NEW ACCOUNT</li>
                         <li>REQUEST NEW PASSWORD</li>
                     </ul>
-                    
                 </form>
             </section>
         </div>
