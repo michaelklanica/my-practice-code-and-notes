@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    padding: 5px;
+}
+
 .container {
     font-family: Arial, Veranda, sans-serif;
     display: flex;
@@ -18,9 +22,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100% - 4px);
+    width: 100%;
     height: 100px;
-    margin: 2px;
+    /*margin: 2px;*/
 }
 
 .inner-container {
@@ -56,22 +60,22 @@ nav {
 
 aside {
     background-color: #d0d0d0;
-    width: 210px;
-    height: 500px;
-    margin: 2px;
+    width: 194px;
+    padding: 8px;
+    /*margin: 2px;*/
 }
 
 .site-search {
-    padding: 8px;
     font-size: .9em;
     border: 1px black solid;
     margin: 1px;
+    padding: 8px 0;
 }
 
 main {
     background-color: #B26919;
-    width: calc(100% - 420px);
-    height: 500px;
+    width: calc(100% - 424px);
+    /*height: 500px;*/
 }
 
 section {
@@ -79,7 +83,7 @@ section {
     width: 210px;
     height: fit-content;
     padding: 8px;
-    margin: 2px;
+    /*margin: 2px;*/
     display: flex;
     flex-direction: column;
 }
