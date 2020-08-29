@@ -4,15 +4,23 @@ body {
 }
 
 .my-container {
-    border: #840000 2px solid;
+    border: #840000 5px solid;
 }
 
 .my-row {
-    border: #003584 2px solid;
-    height: 200px;
+    border: #003584 5px solid;
 }
 
 .my-col {
-    border: #288400 2px dotted;
+    border: #288400 5px dotted;
 }
+
+.circles {
+    text-align: center;
+    border: black 5px solid;
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+}
+
 
