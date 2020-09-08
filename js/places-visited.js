@@ -17,7 +17,15 @@ function geocode(search, token) {
             return data.features[0].center;
         });
 }
+var placesVisited = ["San Antonio, TX", "Austin, TX", "Houston , TX"]
 
-geocode("San Antonio, TX", mapboxToken).then(function(results) {
-    console.log(results);
-});
+for (var i = 0; i < placesVisited.length; i++) {
+    geocode(placesVisited[i], mapboxToken).then(function(results) {
+        console.log(results);
+        map.setCenter(results);
+        var marker = new mapboxgl.Marker()
+            .setLngLat(results)
+
+            .addTo(map);
+    });
+}
